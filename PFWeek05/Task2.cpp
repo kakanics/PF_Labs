@@ -13,8 +13,11 @@ main()
 	float c;
 	float result;
 
+	cout << "Enter coefficient of x2: ";
 	cin >> a;
+	cout << "Enter coefficient of x: ";
 	cin >> b;
+	cout << "Enter constant in the equation: ";
 	cin >> c;
 
 	result = positiveRoot(a,b,c);
