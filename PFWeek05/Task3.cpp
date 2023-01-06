@@ -8,6 +8,7 @@ bool isSymmetric(int);
 main()
 {
 	int n1;
+	cout << "Enter 3 digit number: ";
 	cin >> n1;
 
 	bool isTrue;

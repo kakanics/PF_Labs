@@ -9,7 +9,7 @@ main()
     int input;
     bool isEvenish;
 
-    cout << "Please enter a number: ";
+    cout << "Please enter a 5 digit number: ";
     cin >> input;
 
     isEvenish = IsEvenish(input);

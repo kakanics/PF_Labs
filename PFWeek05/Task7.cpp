@@ -17,6 +17,8 @@ main()
     int pipe1Vol;
     int pipe2Vol;
     int OverFlow = 0;
+    float TimeToFill;
+    float volumeFloat;
 
     cout << "Please enter the volume of the pool: ";
     cin >> volume;
@@ -36,18 +38,21 @@ main()
     percenFilled = PercentageCalculator(Filled, volume);
 
     if(Filled > volume){
-        OverFlow = Filled - volume;   
+        OverFlow = Filled - volume;
+        volumeFloat = volume;
+        TimeToFill = volumeFloat/(pipe1+pipe2);   
     }
 
     if(OverFlow==0)
     {
     cout << "The pool has filled: "<<Filled << " Liters" << endl << "so, it is "<<percenFilled << "% filled" << endl;
-    cout << "Pipe 1 contributed " << pipe1Vol << "%" << endl << "Pipe 2 contributed " <<  pipe2Vol << "%" ;
+    cout << "Pipe 1 contributed " << pipe1Vol << "%" << endl ;
+    cout << "Pipe 2 contributed " << pipe2Vol << "%" ;
     }
 
     if(OverFlow!=0)
     {
-        cout << "Water was wasted: " << OverFlow << " liters";
+        cout << "Water was wasted: " << OverFlow << " liters"<< endl << "Pipe 2 contributed " <<  pipe2Vol << "%" << endl << "The pool filled in " << TimeToFill << "hours";
     }
 
 }
