@@ -33,7 +33,7 @@ main()
 
 int requiredTime(int givenDays, int workers)
 {
-    float workingDays;
+    int workingDays;
     int workingHoursTotal;
     int workingHoursPerson;
 
