@@ -45,8 +45,8 @@ float priceCalc(char service, int minutes)
         if(time == 'd' || time == 'D')
         {
             minutes = minutes - 75;
-            price = minutes * 0.1;
-            if(minutes < 75)
+            price = 25+minutes * 0.1;
+            if(minutes < 0)
             {
                 price = 25;
             }
